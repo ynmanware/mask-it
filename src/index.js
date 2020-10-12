@@ -36,7 +36,7 @@ const maskValues = (payload, pathsToBeMasked) => {
     return payload;
 }
 module.exports = (replacement) => {
-    REPLACEMENT = replacement;
+    REPLACEMENT = replacement || REPLACEMENT;
     return maskValues;
 }
 
