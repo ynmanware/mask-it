@@ -1,19 +1,19 @@
-# mask-it
+# mask-json-path
 Mask values from given JSON (objects / arrays). 
 Useful in protecting confidential data, mask it before sending it to third party applications.
 
 ## Installation
 ```
-$ npm install mask-it
+$ npm i mask-json-path
 ```
 OR
 ```
-$ yarn install mask-it
+$ yarn install mask-json-path
 ```
 
 ## Usage
 ```javascript
-const maskJson = require('mask-it')('***') // values will be replaced with '***'
+const maskJson = require('mask-json-path')('***') // values will be replaced with '***'
 const pathsToBeMasked = ['block[].price'];
 const mockData = {"block":[{"type":"article","id":"1","price":"$40"},{"type":"article","id":"2","price":"$50"}]}
 const maskedData = maskJson(mockData, pathsToBeMasked);

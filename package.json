@@ -1,10 +1,11 @@
 {
-  "name": "mask-it",
+  "name": "mask-json-path",
   "version": "1.0.0",
   "description": "",
   "scripts": {
     "test": "jest --coverage"
   },
+  "main": "./src/index.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ynmanware/mask-it.git"
@@ -15,8 +16,8 @@
   },
   "keywords": [
     "json-mask",
-    "javascript",
-    "mask-json"
+    "mask-json",
+    "redact"
   ],
   "author": "yogesh manware",
   "license": "MIT",
