@@ -19,7 +19,7 @@ const mockData = {"block":[{"type":"article","id":"1","price":"$40"},{"type":"ar
 const maskedData = maskJson(mockData, pathsToBeMasked);
 // maskedData = {"block":[{"type":"article","id":"1","price":"***"},{"type":"article","id":"2","price":"***"}]}
 ```
-Note that input json object get modified in the process, cloning isn't used. 
+Note that input json object gets modified in the process, cloning isn't done. 
 
 ## Tests
 
